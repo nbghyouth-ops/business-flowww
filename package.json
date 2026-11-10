@@ -1,0 +1,49 @@
+{
+  "name": "business-flow-platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "test:e2e": "node tests/integration/e2e.mjs",
+    "check": "npm run typecheck && npm run lint",
+    "vercel:cron-secret": "node scripts/configure-vercel-cron-secret.mjs",
+    "db:migrate": "node scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^6.4.24",
+    "@types/pdfkit": "^0.17.7",
+    "decimal.js": "10.6.0",
+    "dotenv": "17.3.1",
+    "drizzle-orm": "0.45.2",
+    "next": "16.2.6",
+    "nodemailer": "^7.0.13",
+    "pdfkit": "^0.17.2",
+    "pg": "8.20.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "read-excel-file": "^5.8.8",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/node": "22.19.15",
+    "@types/pg": "8.18.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "drizzle-kit": "0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "postcss": "8.5.8",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": "22.x",
+    "npm": ">=10"
+  }
+}

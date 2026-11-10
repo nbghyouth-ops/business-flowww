@@ -1,0 +1,5 @@
+# BUILD_REPORT — revisi sandbox 2026-11-10
+
+Source ZIP diekstrak dan diperbaiki pada folder `business-flow-work`. Patch pada revisi ini mencakup kebijakan password minimum 15 karakter, penolakan beberapa password umum, hashing key rate-limit, OTP dev-code tidak diekspos pada Vercel/production, penyimpanan session browser yang defensif, kontrol visibilitas password, daftar dan pencabutan sesi perangkat lain, pembatasan body request secara streaming, pengamanan scheduler dengan `CRON_SECRET`, perbaikan advisory lock bootstrap menjadi transaction-scoped agar kompatibel dengan transaction pooling, Vercel Cron, konfigurasi Drizzle TypeScript, skrip environment scheduler, dokumentasi, dan panduan manual test.
+
+**Build belum diverifikasi.** Percobaan dependency install gagal karena sandbox tidak dapat resolve `registry.npmjs.org` (`EAI_AGAIN`), dan database server lokal tidak tersedia. Tidak ada klaim `next build`, typecheck, lint atau E2E berhasil pada revisi ini. Lihat `DEPLOYMENT_REPORT.md` dan `docs/PRODUCTION_READINESS.md`.

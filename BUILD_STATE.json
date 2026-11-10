@@ -1,0 +1,43 @@
+{
+  "project": "Business Flow",
+  "updatedAt": "2026-11-10",
+  "baseline": "Business-Flow-Vercel-Ready (+ SMTP/CORS/health/logging dari business-flow-platform-patched)",
+  "status": "NOT_PRODUCTION_READY",
+  "verification": {
+    "typecheck": "pass (0 errors)",
+    "lint": "pass (0 errors, 7 warnings react-hooks)",
+    "build": "pass",
+    "e2e": "185/185 (PostgreSQL 16 lokal)",
+    "productionSmtpSink": "pass: OTP dikirim via SMTP, tidak ada di respons; tanpa SMTP -> 503"
+  },
+  "done": [
+    "Fase1",
+    "Fase2",
+    "Fase3A",
+    "Fase3B",
+    "Fase3C",
+    "Fase3D(audit)",
+    "Fase3E(audit)",
+    "Fase4A",
+    "Fase4B",
+    "Fase4C",
+    "Fase4D",
+    "Fase4E",
+    "Fase7A",
+    "Fase7B(reports only)",
+    "Fase7C",
+    "Fase7D",
+    "Fase8F",
+    "Fase10"
+  ],
+  "notDone": {
+    "Fase5": "butuh akun Neon + login browser",
+    "Fase6": "butuh bucket S3/Neon",
+    "Fase8": "A-E,G: sebagian sudah ada di UI; belum diuji di browser/375px"
+  },
+  "extra": [
+    "drizzle/ migrasi SQL berversi + scripts/migrate.mjs",
+    "perbaikan tipe dispatch.ts",
+    "konfigurasi ESLint"
+  ]
+}
